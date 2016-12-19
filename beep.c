@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+//各乐音的频率，分别为：低音，中音高音，倍高音
 int N[4][7]=
 {
 131,147,165,175,196,220,247,
@@ -15,6 +16,7 @@ int pow2(int n){
 	}
 	return ret;
 }
+//根据字符串播放音乐
 void sing(char *str,int bpm){
 	int len=strlen(str);
 	if(len%3!=0){
